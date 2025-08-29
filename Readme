@@ -1,0 +1,48 @@
+
+
+
+ 1. Difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll
+
+ getElementById → Finds one element by its unique id.  
+ getElementsByClassName → Finds all elements with the same class. Gives a collection.  
+ querySelector → Finds the first element that matches a CSS selector.  
+ querySelectorAll→ Finds all elements that match a CSS selector. Gives a list.  
+
+
+
+2. How to create and insert a new element?
+
+ Add text with innerText  or  textContent.  
+ Insert it using  appendChild(), append(), or prepend().  
+
+
+const div = document.createElement("div");
+
+div.innerText = "Hello!";
+
+document.body.appendChild(div);
+
+
+3. What is Event Bubbling?
+
+Event bubbling means an event starts from the target element and then goes up to its parents.
+
+
+
+4. What is Event Delegation? Why useful?
+Event delegation means putting one event listener on a parent, not on every child.
+
+We check event.target to know which child was clicked.
+
+Useful because:
+
+Less code and better performance.
+
+Works even for new elements added later.
+
+5. Difference between preventDefault() and stopPropagation()
+
+preventDefault() → Stops default browser action (like link open or form submit).
+
+stopPropagation() → Stops the event from going to parent elements.
+
