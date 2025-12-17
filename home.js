@@ -23,7 +23,7 @@ callButtons.forEach((button) => {
         const name = card.getAttribute("data-name");
         const number = card.getAttribute("data-number");
 
-        if (coinCount < 20) {
+        if (coinCount < 15) {
             alert("Not enough coins to make a call.");
             return;
         }
@@ -93,7 +93,7 @@ copyButtons.forEach((button) => {
     
     
     navigator.clipboard.writeText(number);
-    alert("Copied: " + number); 
+    alert(`📋 Number copied to clipboard!\n$: ${number}`);
     
     // Update the copy count and its display.
     copyCount++;
