@@ -1,6 +1,6 @@
 
 let heartCount = 0;
-let coinCount = 100;
+let coinCount = 200;
 let copyCount = 0;
 
 // DOM Element References: Get references to the HTML elements where we'll display data.
